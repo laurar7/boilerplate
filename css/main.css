@@ -141,6 +141,15 @@ p {
   line-height: 1.285;
 }
  
+img {
+  width: 100%;
+ }
+
+ figure {
+  margin: 0;
+ }
+  
+
 address {
  font-style: normal;
 }
@@ -164,7 +173,7 @@ address {
 
  header {
   padding: 15px 0;
- }
+  }
 
  header .content-wrapper {
   display: flex;
@@ -172,7 +181,15 @@ address {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
- }
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
  .header-divider {
   background: #3a3a3a; 
@@ -239,7 +256,12 @@ footer .copyright {
  /* -------------------- Mobile Styles - Homepage -------------------- */
 
  /* Hero Area */
+ 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -292,6 +314,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -519,6 +544,10 @@ footer .content-wrapper {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -532,6 +561,10 @@ footer .content-wrapper {
   }
 
    /* Hero Area */
+
+   .hero-area {
+    min-height: 600px;
+  }
 
    .hero-area h1 {
     font-size: 3em;
@@ -555,6 +588,11 @@ footer .content-wrapper {
    }
 
    /* Features */
+
+   .features h2 {
+    margin-bottom: 20px;
+   }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -578,7 +616,8 @@ footer .content-wrapper {
     width: 85%;
   }
 
-  .reviews article div{
+  .reviews article figure,
+  .reviews article div {
     width: 49%;
   }
 
@@ -698,7 +737,7 @@ footer .content-wrapper {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
 }
 
   /* Aside */
@@ -750,6 +789,10 @@ footer .content-wrapper {
       font-size: 3em;
   }
 
+  .contact-content h4{
+    font-size: 1.875em;
+  }
+
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
@@ -758,7 +801,11 @@ footer .content-wrapper {
     font-size: 3em;
   }
 
-}
+  .faq h4,
+  .faq p{
+    font-size: 1.125em;
+    line-height: 1;
+  }
 
 }
 
