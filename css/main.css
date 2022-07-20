@@ -115,6 +115,8 @@ body {
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -126,6 +128,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -148,11 +151,6 @@ img {
  figure {
   margin: 0;
  }
-
-.features i {
-	font-size: 3.75em;
-        margin-bottom: 40px;
-}
 
 address {
  font-style: normal;
@@ -180,11 +178,11 @@ address {
   }
 
  header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
   }
 
   header figure {
@@ -197,8 +195,8 @@ address {
 
  .header-divider {
   background: #3a3a3a; 
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
  }
 
@@ -350,6 +348,11 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   text-align: center;
   margin: 0;
@@ -375,27 +378,12 @@ input[type=button] {
   margin: 20px 0;
 }
 
-/* Footer */
-
-footer .content-wrapper {
-  width: 55%;
-  margin: 20px 0;
-}
-
 /* ==========================================================================
    About Page
    ========================================================================== */
 
    .mission {
     background-color: #527158;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .contact-section {
-    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,6 +406,13 @@ footer .content-wrapper {
     left: 0; 
   }
   
+  .contact-section {
+    background-color: #2a423a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
    .contact-content p {
     margin: 0;
